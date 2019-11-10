@@ -51,6 +51,7 @@ You can see result examples in [dynamics.html](dynamics.html) and [directors.htm
     in case the author has several movies from the movie list.
     
     For **information gathering** and **calculations** see [ImdbMovieParser](src/main/java/dev/jfuture/task/parser/imdb/ImdbMovieParser.java)
+    
 ## Data
 All data is collected from online resources during program execution. 
 Data sources are indicated in the generated documents.
