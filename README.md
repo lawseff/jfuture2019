@@ -12,14 +12,14 @@ In order to run the program, you need to use Maven.
 
 1. Build project using 
 
-```
-mvn install
-```
+    ```
+    mvn install
+    ```
 
 2. Run program using 
-```
-mvn exec:java -Dexec.mainClass=dev.jfuture.task.TaskSolver
-```
+    ```
+    mvn exec:java -Dexec.mainClass=dev.jfuture.task.TaskSolver
+    ```
 
 The program will gather the data and make calculations. Note, that it may take a while.
 After that files "dynamics.html" and "directors.html" will be created in the project directory. 
