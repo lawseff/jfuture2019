@@ -2,7 +2,7 @@ package dev.jfuture.task.service;
 
 import dev.jfuture.task.exception.WebParsingException;
 import dev.jfuture.task.calculator.GenreCalculator;
-import dev.jfuture.task.entity.Movie;
+import dev.jfuture.task.Movie;
 import dev.jfuture.task.parser.wikipedia.WikipediaMovieParser;
 import java.util.ArrayList;
 import java.util.Comparator;

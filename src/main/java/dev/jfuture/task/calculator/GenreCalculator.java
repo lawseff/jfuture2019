@@ -1,6 +1,6 @@
 package dev.jfuture.task.calculator;
 
-import dev.jfuture.task.entity.Movie;
+import dev.jfuture.task.Movie;
 import java.util.List;
 import java.util.Map;
 

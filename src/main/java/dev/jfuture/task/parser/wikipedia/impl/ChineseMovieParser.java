@@ -1,6 +1,6 @@
 package dev.jfuture.task.parser.wikipedia.impl;
 
-import dev.jfuture.task.entity.Movie;
+import dev.jfuture.task.Movie;
 import dev.jfuture.task.parser.wikipedia.AbstractMovieParser;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -62,8 +62,8 @@ public class ChineseMovieParser extends AbstractMovieParser {
         List<String> genresOfMovie = Arrays.asList(
                 cellText.split(GENRE_DELIMITER)
         );
-        // in the first task we don't need information about the director and rating
-        Movie movie = new Movie(year, genresOfMovie, null, null);
+        // in the first task we don't need information about the title, director and rating
+        Movie movie = new Movie(null, year, genresOfMovie, null, null);
         return Optional.of(movie);
     }
 

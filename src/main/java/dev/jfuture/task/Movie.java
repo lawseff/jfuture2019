@@ -1,23 +1,30 @@
-package dev.jfuture.task.entity;
+package dev.jfuture.task;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class Movie {
 
-    private int year;
+    private String title;
+    private Integer year;
     private List<String> genres;
     private String director;
-    private Rating rating;
+    private BigDecimal rating;
 
     public Movie() {
 
     }
 
-    public Movie(int year, List<String> genres, String director, Rating rating) {
+    public Movie(String title, Integer year, List<String> genres, String director, BigDecimal rating) {
+        this.title = title;
         this.year = year;
         this.genres = genres;
         this.director = director;
         this.rating = rating;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public int getYear() {
@@ -32,7 +39,7 @@ public class Movie {
         return director;
     }
 
-    public Rating getRating() {
+    public BigDecimal getRating() {
         return rating;
     }
 

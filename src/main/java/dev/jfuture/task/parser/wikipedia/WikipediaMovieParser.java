@@ -1,6 +1,6 @@
 package dev.jfuture.task.parser.wikipedia;
 
-import dev.jfuture.task.entity.Movie;
+import dev.jfuture.task.Movie;
 import dev.jfuture.task.exception.WebParsingException;
 
 import java.util.List;
