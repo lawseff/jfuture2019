@@ -27,6 +27,11 @@ After that files "dynamics.html" and "directors.html" will be created in the pro
 
 You can see result examples in [dynamics.html](dynamics.html) and [directors.html](directors.html)
 
+## Algorithm description
+In the first task the program parses movies from Wikipedia tables.
+Then it calculates the amount of each genre and selects five the most popular genres.
+Later the amount of movies of each genre is counted. The results are presented in the form of HTML documents.
+
 ## Data
 All data is collected from online resources during program execution. 
 In the first task, genres are selected based on their popularity
