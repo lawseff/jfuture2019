@@ -24,7 +24,7 @@ mvn exec:java -Dexec.mainClass=dev.jfuture.task.TaskSolver
 The program will gather the data and make calculations. Note, that it may take a while.
 After that files "dynamics.html" and "directors.html" will be created in the project directory. 
 
-You can see examples in [dynamics.html](dynamics.html) and [directors.html](directors.html)
+You can see result examples in [dynamics.html](dynamics.html) and [directors.html](directors.html)
 
 ## Data
 All data is collected from online resources during program execution. 
