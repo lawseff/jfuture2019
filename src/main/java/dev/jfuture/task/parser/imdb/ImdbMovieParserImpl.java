@@ -52,7 +52,8 @@ public class ImdbMovieParserImpl implements ImdbMovieParser {
             String ratingValue = row.getElementsByClass(RATING_CLASS)
                     .first()
                     .text();
-            BigDecimal rating = new BigDecimal(ratingValue);
+            BigDecimal rating = new BigDecimal(ratingValue); // calculating rating value from String
+
             // In the second task we don't need year and genres of the movie
             Movie movie = new Movie(title, null, null, director, rating);
 
