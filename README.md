@@ -30,7 +30,7 @@ After that files "dynamics.html" and "directors.html" will be created in the pro
 You can see result examples in [dynamics.html](dynamics.html) and [directors.html](directors.html)
 
 ## Algorithm description
-* ###Task 1:
+* Task 1:
 
     In the first task the program parses movies from Wikipedia tables.
     Then it calculates the amount of each genre and selects five the most popular genres.
@@ -41,7 +41,9 @@ You can see result examples in [dynamics.html](dynamics.html) and [directors.htm
     For **calculations** see [GenreCalculator](src/main/java/dev/jfuture/task/calculator/GenreCalculator.java) and
     [MovieService](src/main/java/dev/jfuture/task/service/MovieService.java)
     
-* ###Task 2:
+    ---
+    
+* Task 2:
     In the second task the program parses movies from IMDb rating.
     Rating is calculated from parsed values.
     The list is distinct, i. e. it does not contains the same directors.
