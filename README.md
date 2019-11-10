@@ -17,6 +17,7 @@ In order to run the program, you need to use Maven.
     ```
 
 2. Run program using 
+
     ```
     mvn exec:java -Dexec.mainClass=dev.jfuture.task.TaskSolver
     ```
