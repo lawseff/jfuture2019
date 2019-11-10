@@ -3,6 +3,7 @@ package dev.jfuture.task.parser.wikipedia.impl;
 import dev.jfuture.task.entity.Movie;
 import dev.jfuture.task.parser.wikipedia.AbstractMovieParser;
 import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import java.io.IOException;
@@ -24,7 +25,7 @@ public class ChineseMovieParser extends AbstractMovieParser {
     private static final String GENRE_DELIMITER = " / ";
 
     @Override
-    protected Element getSource(int year) throws IOException {
+    protected Document getSource(int year) throws IOException {
         String source;
         switch (year) {
             case 2017:

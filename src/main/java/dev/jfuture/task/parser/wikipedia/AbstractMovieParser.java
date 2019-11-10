@@ -2,6 +2,7 @@ package dev.jfuture.task.parser.wikipedia;
 
 import dev.jfuture.task.entity.Movie;
 import dev.jfuture.task.exception.WebParsingException;
+import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import java.io.IOException;
@@ -20,14 +21,15 @@ public abstract class AbstractMovieParser implements WikipediaMovieParser {
     public List<Movie> getMoviesByYear(int year) throws WebParsingException {
         List<Movie> movies = new ArrayList<>();
 
-        Element source;
+        Document document;
         try {
-            source = getSource(year);
+            document = getSource(year);
         } catch (IOException e) {
             throw new WebParsingException(e.getMessage(), e);
         }
 
-        Elements tables = source.select(TABLE_TAG)
+        Element body = document.body();
+        Elements tables = body.select(TABLE_TAG)
                 .stream()
                 .filter(this::isMovieTable)
                 .collect(Collectors.toCollection(Elements::new));
@@ -47,7 +49,7 @@ public abstract class AbstractMovieParser implements WikipediaMovieParser {
         return movies;
     }
 
-    protected abstract Element getSource(int year) throws IOException;
+    protected abstract Document getSource(int year) throws IOException;
 
     protected abstract boolean isMovieTable(Element table);
 
