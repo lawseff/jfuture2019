@@ -1,7 +1,7 @@
-package dev.jfuture.task.parser.impl;
+package dev.jfuture.task.parser.wikipedia.impl;
 
 import dev.jfuture.task.entity.Movie;
-import dev.jfuture.task.parser.AbstractMovieParser;
+import dev.jfuture.task.parser.wikipedia.AbstractMovieParser;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -12,7 +12,7 @@ import java.util.Optional;
 
 public class ChineseMovieParser extends AbstractMovieParser {
 
-    // As Wikipedia articles can be changed, we have to use the specific versions.
+    // As structure of some Wikipedia articles can be changed, we have to use the specific versions.
     // Proper parsing of the films, released before 2017, might not be guaranteed
     private static final String SOURCE_2017 = "https://en.wikipedia.org/w/index.php?title=List_of_Chinese_films_of_2017&oldid=923009452";
     private static final String SOURCE_2018 = "https://en.wikipedia.org/w/index.php?title=List_of_Chinese_films_of_2018&oldid=900037799";

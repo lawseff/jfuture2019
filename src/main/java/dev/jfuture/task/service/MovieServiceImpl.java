@@ -3,7 +3,7 @@ package dev.jfuture.task.service;
 import dev.jfuture.task.exception.WebParsingException;
 import dev.jfuture.task.calculator.GenreCalculator;
 import dev.jfuture.task.entity.Movie;
-import dev.jfuture.task.parser.MovieParser;
+import dev.jfuture.task.parser.wikipedia.WikipediaMovieParser;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -12,11 +12,11 @@ import java.util.stream.Collectors;
 
 public class MovieServiceImpl implements MovieService {
 
-    private MovieParser americanMovieParser;
-    private MovieParser chineseMovieParser;
+    private WikipediaMovieParser americanMovieParser;
+    private WikipediaMovieParser chineseMovieParser;
     private GenreCalculator genreCalculator;
 
-    public MovieServiceImpl(MovieParser americanMovieParser, MovieParser chineseMovieParser,
+    public MovieServiceImpl(WikipediaMovieParser americanMovieParser, WikipediaMovieParser chineseMovieParser,
                             GenreCalculator genreCalculator) {
         this.americanMovieParser = americanMovieParser;
         this.chineseMovieParser = chineseMovieParser;

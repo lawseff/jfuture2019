@@ -1,4 +1,4 @@
-package dev.jfuture.task.parser;
+package dev.jfuture.task.parser.wikipedia;
 
 import dev.jfuture.task.entity.Movie;
 import dev.jfuture.task.exception.WebParsingException;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public abstract class AbstractMovieParser implements MovieParser {
+public abstract class AbstractMovieParser implements WikipediaMovieParser {
 
     private static final String TABLE_TAG = "table";
     private static final String ROW_TAG = "tr";
