@@ -41,7 +41,6 @@ You can see result examples in [dynamics.html](dynamics.html) and [directors.htm
     For **calculations** see [GenreCalculator](src/main/java/dev/jfuture/task/calculator/GenreCalculator.java) and
     [MovieService](src/main/java/dev/jfuture/task/service/MovieService.java)
     
-  --
 * ###Task 2:
     In the second task the program parses movies from IMDb rating.
     Rating is calculated from parsed values.
