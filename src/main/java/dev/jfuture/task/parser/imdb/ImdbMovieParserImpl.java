@@ -42,7 +42,7 @@ public class ImdbMovieParserImpl implements ImdbMovieParser {
         removeHeader(rows);
 
         List<Movie> movies = new ArrayList<>(amount);
-        for (int i = 0; movies.size() < 5; i++) {
+        for (int i = 0; movies.size() < amount; i++) {
             Element row = rows.get(i);
             Element titleAndDirectorAndCast = row.getElementsByClass(TITLE_CLASS)
                     .first()
