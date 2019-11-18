@@ -42,8 +42,9 @@ public class ImdbMovieParserImpl implements ImdbMovieParser {
         removeHeader(rows);
 
         List<Movie> movies = new ArrayList<>(amount);
-        for (int i = 0; movies.size() < amount; i++) {
-            Element row = rows.get(i);
+        int i = 0;
+        while (movies.size() < amount && i < rows.size() - 1) {
+            Element row = rows.get(i++);
             Element titleAndDirectorAndCast = row.getElementsByClass(TITLE_CLASS)
                     .first()
                     .selectFirst(HYPERLINK_TAG); // <a> tag inside <td> tag
