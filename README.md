@@ -46,7 +46,7 @@ You can see result examples in [dynamics.html](dynamics.html) and [directors.htm
 * Task 2:
     In the second task the program parses movies from IMDb rating.
     Rating is calculated from parsed values.
-    The list is distinct, i. e. it does not contains the same directors.
+    The list contains distinct items.
     It is performed by comparing calculated ratings of the movies
     in case the author has several movies from the movie list.
     
