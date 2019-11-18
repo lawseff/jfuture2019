@@ -31,7 +31,7 @@ public class DirectorsDocumentBuilder {
     }
 
     public String getTopDirectorsInHtmlFormat() throws DocumentException {
-        List<Movie> topRatedMovies = null;
+        List<Movie> topRatedMovies;
         try {
             topRatedMovies = imdbMovieParser.getTopMoviesOfDistinctDirectors(5);
         } catch (WebParsingException e) {
