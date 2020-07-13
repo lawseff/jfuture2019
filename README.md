@@ -56,5 +56,5 @@ You can see result examples in [dynamics.html](dynamics.html) and [directors.htm
 All data is collected from online resources during program execution. 
 Data sources are indicated in the generated documents.
 
-## Author
-Mikhail Loseu
+------
+Special for JFuture 2019 by Mikhail Loseu
